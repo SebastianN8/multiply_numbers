@@ -23,11 +23,19 @@ def multiply_numbers():
 	multiple_two = int(multiple_two_input)
 
 	# Function of the addition 
-	if multiple_two > 0:
-		while multiple_two is not 0:
-			the_addition = the_addition + multiple_one
-			multiple_two = multiple_two - 1
-	        print 'This is the result: ', str(the_addition)
+	while true:
+		if multiple_two > 0:
+			while (multiple_two is not 0):
+				the_addition = the_addition + multiple_one
+				multiple_two = multiple_two - 1
+			print('This is the result: ', str(the_addition))
+		elif multiple_two < 0:
+			while (multiple_two is not 0):
+				the_addition = the_addition + (-multiple_one)
+				multiple_two = multiple_two + 1
+			print('This is the result: ', str(the_addition))
+		elif multiple_two == 0:
+			print('This is the result: ', str(the_addition))
 
 
 # This set of variables would have to be used combined with the global declaration of the variables inside the function
@@ -39,3 +47,4 @@ def multiply_numbers():
 
 # Calling the function
 the_result = multiply_numbers()
+input()
