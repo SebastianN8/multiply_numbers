@@ -1,7 +1,7 @@
-#
+ #
 # multiply_numbers.py
 #
-# Created by: Sebastian N
+# Created by: Sbastian N
 # Created on: April 9
 #
 # This program lets the user add numbers
@@ -23,19 +23,18 @@ def multiply_numbers():
 	multiple_two = int(multiple_two_input)
 
 	# Function of the addition 
-	while true:
-		if multiple_two > 0:
-			while (multiple_two is not 0):
-				the_addition = the_addition + multiple_one
-				multiple_two = multiple_two - 1
-			print('This is the result: ', str(the_addition))
-		elif multiple_two < 0:
-			while (multiple_two is not 0):
-				the_addition = the_addition + (-multiple_one)
-				multiple_two = multiple_two + 1
-			print('This is the result: ', str(the_addition))
-		elif multiple_two == 0:
-			print('This is the result: ', str(the_addition))
+	if multiple_two > 0:
+		while (multiple_two is not 0):
+			the_addition = the_addition + multiple_one
+			multiple_two = multiple_two - 1
+		print 'This is the result: ', str(the_addition)
+	elif multiple_two < 0:
+		while (multiple_two is not 0):
+			the_addition = the_addition + (-multiple_one)
+			multiple_two = multiple_two + 1
+		print 'This is the result: ', str(the_addition)
+	elif multiple_two == 0:
+		print 'This is the result: ', str(the_addition)
 
 
 # This set of variables would have to be used combined with the global declaration of the variables inside the function
